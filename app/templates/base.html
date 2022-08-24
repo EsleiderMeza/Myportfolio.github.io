@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<title>{% block title %}{% endblock %} - Portafolio</title>
+
+<link rel="stylesheet" href="{{url_for('static', filename='style.css') }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,500;0,800;0,900;1,300;1,400;1,600;1,800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,500;0,800;0,900;1,300;1,400;1,600;1,800&family=Rufina:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://kit.fontawesome.com/4c3af5bd1a.js" crossorigin="anonymous"></script>
+
+<html>
+<body>
+   
+
+    <header>
+	<div class="logo"> ESLEIDER MEZA</div>
+    
+
+    <nav>
+        <ul>
+	    <li><a href="{{ url_for('portfolio.index') }}" class="select">HOME</a></li>
+	    <li><a href="#section-first">SKILLS</a></li>
+	    <li><a href="#section-second">PROJECTS</a></li>
+	    <li><a href="#section-third">CONTACT ME</a></li>
+        </ul>
+    </nav>
+    </header>
+
+
+
+    <section>{% block content %}{% endblock %}</section>
+
+    <footer>
+	<div class="container__footer">
+	    <div class="box__footer">
+		<div class="logo">
+		    <img src="./imagenes/logo-magtimus.png" alt="">
+		</div>
+		<div class="terms"><p>ESLEIDER MEZA</p></div>
+	    </div>
+	    <div class="box__footer">
+		<h2>Solutions</h2>
+		<a href="#">App development</a>
+		<a href="#">Web design</a>
+		<a href="#">Web development</a>
+		<a href="#">Web support</a>
+	    </div>
+
+	    <div class="box__footer">
+		<h2>  social networks</h2>
+		<div class="social-media">
+		   <a href=" https://github.com/kritc?tab=repositories" target="_BLANK"><i class="fab fa-github"></i></a>
+		   <a href="https://wa.link/0576ig" target="_BLANK"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/in/esleider-jes%C3%BAs-meza-rios-1412401a2/" target="_BLANK"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://t.me/LINUX454" target="_BLANK"><i class="fab fa-telegram"></i></a>
+		</div>	
+	    </div>
+
+	</div>
+
+	<div class="box__copyright">
+	    <hr>
+	    
+	    <p>&copy  <b>Esleider Meza</b></p>
+	</div>
+    </footer> 
+
+    
+</ht2>

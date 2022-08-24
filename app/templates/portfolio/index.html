@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Bienvenido
+{% endblock %}
+
+    
+{% block content %}
+    <div class="hero">
+
+	    <div class="hero-content">
+
+		<div class="left">
+
+		    <h1>Soy desarrollador</h1>
+
+		    <h2>Esleider Jesus Meza Rios</h2>
+
+		    <p>Construyo aplicaciones en Python dinámicas utilizando <br>
+		    bases de datos relacionales.</p>
+
+		    <a href="#section-third" class="btn">Contact me</a>
+
+		</div>
+
+		<div class="media__cover">
+		    <img src="{{ url_for('static', filename='undraw_Code_thinking_re_gka2.svg')}}" alt="">
+		</div>
+
+
+	    </div>
+
+	</div>
+    </div>
+
+{% include 'portfolio/section-first.html'%}
+{% include 'portfolio/section-second.html'%}
+{% include 'portfolio/section-third.html'%}
+{% endblock %}
+
+

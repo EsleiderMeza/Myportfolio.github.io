@@ -1,0 +1,45 @@
+<section id="section-third">
+
+
+    <div class="container-form">
+	<div class="form__img">
+	    <img src="{{url_for('static', filename='message.svg')}}" alt="">
+	</div>
+	<form class="form" method="post" action="{{url_for('portfolio.mail')}}">
+	    <h2 class="form__title"> Contact <span>Me</span></h2>
+	    <p class="form__paragraph">Trabajemos juntos y demos un paso mas al futuro.</p>
+	    <div class="form__container">
+
+		<div class="form__gruop">
+		    <input name="name" class="form__input" type="text" placeholder=" " required>
+		    <label for="name" class="form__label">Nombre</label>
+		    <span class="form__line"></span>
+		</div>
+
+
+		<div class="form__gruop">
+		    <input name="email" class="form__input" type="email" placeholder=" " required>
+		    <label for="email" class="form__label">Correo</label>
+		    <span class="form__line"></span>
+		</div>
+
+
+
+		<div class="form__gruop">
+		    <textarea name="message"  class="form__textarea" placeholder=" " required minlengt="10"></textarea>
+		    <label for="message" class="form__label">Message</label>
+		    <span class="form__line"></span>
+		</div>
+
+
+		<input type="submit" class="form__submit" value="Enviar">
+
+
+
+
+	    </div>
+	</form>
+
+    </div>
+
+</section>
