@@ -54,9 +54,8 @@ def send_email(name, email, message):
         <p>Nombre: -name-</p>
         <p>Correo: -email-</p>
        
-        <p>Mesaje: -message-</p>
+        <p>Mesaje: -message-</p>"""
 
-        """
     mail = Mail(mi_email, to_email, 'Nuevo contacto desde la web', html_content = html_content)
     response = sg.client.mail.send.post(request_body=mail.get())
 
